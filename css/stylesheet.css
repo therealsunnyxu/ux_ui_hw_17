@@ -1,0 +1,198 @@
+/* TYPOGRAPHY */
+@import url("https://fonts.googleapis.com/css?family=Lexend&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+
+h1,
+h2,
+h3,
+p,
+a,
+li {
+    color: black;
+}
+
+h1,
+h2,
+h3,
+.icon p {
+    font-family: "Lexend", "Roboto", "Arial", sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+.primaryNavHeader {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 52px;
+}
+
+p,
+li,
+.tinyText {
+    font-family: "Work Sans", "Roboto", "Arial", sans-serif;
+}
+
+p,
+li {
+    font-size: 16px;
+    line-height: 24px;
+    list-style-type: none;
+}
+
+.tinyText {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.headerNav li,
+.icon p,
+.footerNav li,
+.tinyText,
+.headerNav a,
+.footerNav a {
+    color: #fff;
+}
+
+.icon p {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+body {
+    margin: 0;
+}
+
+header,
+footer,
+#pageContent {
+    display: flex;
+    justify-content: center;
+}
+
+header,
+footer {
+    background-color: #666;
+}
+
+#pageContent {
+    min-height: calc(100vh - 208px - 64px);
+
+}
+
+header {
+    height: 64px;
+    align-items: center;
+}
+
+#headerInner,
+#footerInner,
+#pageContentInner {
+    width: 1024px;
+    display: flex;
+}
+
+#headerInner {
+    padding: 0px 16px;
+    align-items: center;
+    height: 100%;
+}
+
+.icon {
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.headerNav {
+    flex: 1;
+}
+
+.headerNav ul,
+.footerNav ul,
+#sideBar ul {
+    display: flex;
+}
+
+.headerNav ul {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footerNav ul,
+#sideBar ul {
+    flex-direction: column;
+}
+
+#footerInner {
+    padding: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.footerRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    flex: 1;
+    align-self: stretch;
+}
+
+#footerCopyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+ul {
+    gap: 16px;
+    padding: 0px;
+    margin: 16px;
+}
+
+#pageContentInner {
+    align-self: flex-start;
+    padding-top: 64px;
+}
+
+#pageContentInner {
+    display: flex;
+    width: 1024px;
+    align-items: flex-start;
+}
+
+#sideBar {
+    width: 192px;
+    margin: 16px;
+}
+
+.heroImg {
+    height: 256px;
+    width: 256px;
+}
+
+.heroImg img {
+    height: 100%;
+    object-fit: contain;
+    clip-path: circle(128px at center);
+}
+
+#aboutMe {
+    display: flex;
+    gap: 16px;
+    padding: 64px;
+}
