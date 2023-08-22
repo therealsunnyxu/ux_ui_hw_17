@@ -38,6 +38,10 @@ li,
     font-family: "Work Sans", "Roboto", "Arial", sans-serif;
 }
 
+.fanciLiInside p {
+    margin: 0;
+}
+
 p,
 li {
     font-size: 16px;
@@ -58,9 +62,9 @@ a {
 .headerNav li,
 .icon p,
 .footerNav li,
-.tinyText,
 .headerNav a,
-.footerNav a {
+.footerNav a,
+#footerCopyright p {
     color: #fff;
 }
 
@@ -177,7 +181,11 @@ ul {
 
 #sideBar {
     width: 192px;
-    margin: 16px;
+    padding: 16px;
+}
+
+#pageContentRight {
+    flex: 1;
 }
 
 .heroImg {
@@ -191,8 +199,57 @@ ul {
     clip-path: circle(128px at center);
 }
 
-#aboutMe {
+#aboutMe,
+#mySkills,
+#myWork,
+#contactMe {
     display: flex;
     gap: 16px;
     padding: 64px;
+}
+
+#mySkills,
+#myWork,
+#contactMe {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardWrapper {
+    display: flex;
+    gap: 16px;
+}
+
+.card {
+    padding: 16px;
+}
+
+.toolCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toolCard ul {
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+
+.fancyLiWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.fancyLi {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.fancyLi img {
+    height: 44px;
+    width: 44px;
 }
