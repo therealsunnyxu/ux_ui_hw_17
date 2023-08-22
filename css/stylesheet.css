@@ -14,7 +14,8 @@ li {
 h1,
 h2,
 h3,
-.icon p {
+.icon p,
+a.fakeButton {
     font-family: "Lexend", "Roboto", "Arial", sans-serif;
     margin-top: 0;
     margin-bottom: 0;
@@ -23,7 +24,8 @@ h3,
 h1,
 h2,
 h3,
-.primaryNavHeader {
+.primaryNavHeader,
+a.fakeButton {
     font-weight: bold;
 }
 
@@ -64,13 +66,28 @@ a {
 .footerNav li,
 .headerNav a,
 .footerNav a,
-#footerCopyright p {
+#footerCopyright p,
+a.fakeButton {
     color: #fff;
 }
 
 .icon p {
     font-size: 24px;
     line-height: 32px;
+}
+
+a.fakeButton {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+/* The rest of it */
+.fakeButton {
+    background-color: #003262;
+    padding: 10px 16px;
+    border-radius: 16px;
+    align-self: flex-start;
 }
 
 body {
@@ -191,12 +208,15 @@ ul {
 .heroImg {
     height: 256px;
     width: 256px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px #666;
 }
 
 .heroImg img {
     height: 100%;
     object-fit: contain;
     clip-path: circle(128px at center);
+    box-shadow: 4px 4px 8px #666;
 }
 
 #aboutMe,
@@ -217,11 +237,13 @@ ul {
 
 .cardWrapper {
     display: flex;
-    gap: 16px;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     padding: 16px;
+    gap: 16px;
 }
 
 .toolCard {
@@ -236,6 +258,24 @@ ul {
     flex-wrap: wrap;
 }
 
+.cardWrapper.skillCardWrapper {
+    gap: 16px;
+}
+
+.cardWrapper.projectCardWrapper {
+    flex-direction: column;
+    gap: 64px;
+}
+
+.cardWrapper.projectCardWrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: 50% 0%;
+    box-shadow: 4px 4px 4px #666;
+}
 
 .fancyLiWrapper {
     display: flex;
